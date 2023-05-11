@@ -1,7 +1,7 @@
 {
   "name": "skl-lsp",
-  "displayName": "skelly",
-  "description": "a skelly programming language support",
+  "displayName": "skl-lsp",
+  "description": "skelly programming language support",
   "version": "0.1.0",
   "publisher": "SkellyCompilerCollection",
   "repository": {
