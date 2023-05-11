@@ -2,7 +2,7 @@
   "name": "skl-lsp",
   "displayName": "skelly",
   "description": "a skelly programming language support",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "publisher": "SkellyCompilerCollection",
   "repository": {
     "type": "git",
@@ -15,16 +15,26 @@
     "Programming Languages"
   ],
   "contributes": {
-    "languages": [{
-      "id": "skelly",
-      "aliases": ["skelly", "skelly"],
-      "extensions": [".skl",".sklm"],
-      "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "skelly",
-      "scopeName": "source.skelly",
-      "path": "./syntaxes/skelly.tmLanguage.json"
-    }]
+    "languages": [
+      {
+        "id": "skelly",
+        "aliases": [
+          "skelly",
+          "skelly"
+        ],
+        "extensions": [
+          ".skl",
+          ".sklm"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "skelly",
+        "scopeName": "source.skelly",
+        "path": "./syntaxes/skelly.tmLanguage.json"
+      }
+    ]
   }
 }
