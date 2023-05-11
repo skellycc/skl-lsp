@@ -1,0 +1,69 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "skelly",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#preprocessor"
+		},
+		{
+			"include": "#method"
+		},
+		{
+			"include": "#sstd"
+		},
+		{
+			"include": "#function"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.skelly",
+				"match": "\\b(int|long|short|byte|double|float|bool|char|void|shared|unmanaged|unsafe|super|override|gets|return|if|else|else if|do while|while|repeat if|break|continue|for|and|or|not|noteq|volatile|public|private|static|native|hidden|const|unsigned|signed|later|gag|true|false|struct|new)\\b"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.skelly",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.skelly",
+					"match": "\\\\."
+				}
+			]
+		},
+		"comments": {
+			"name": "comment.line.double-slash",
+			"begin": "//",
+			"end": "\\n"
+		},
+		"preprocessor": {
+			"name": "meta.preprocessor.skl",
+			"begin": "#",
+			"end": "\\n"
+		},
+		"method": {
+			"name": "entity.name.function.skl",
+			"match": "\\b(out)\\b"
+		},
+		"sstd": {
+			"name": "entity.name.class.skl",
+			"match": "\\b(skelly)\\b"
+		},
+		"function": {
+			"name": "support.function.skl",
+			"match": "([a-zA-Z_{1}][a-zA-Z0-9_]+)(?=\\()"
+		}
+	},
+	"scopeName": "source.skelly"
+}
