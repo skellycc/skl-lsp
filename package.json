@@ -4,9 +4,10 @@
   "description": "skelly programming language support",
   "version": "0.1.2",
   "publisher": "SkellyCompilerCollection",
+  "icon": "./icons/lsplogo.png",
   "repository": {
     "type": "git",
-    "url": "git://github.com/skellycompilercollection/skl-lsp.git"
+    "url": "https://github.com/skellycompilercollection/skl-lsp.git"
   },
   "engines": {
     "vscode": "^1.78.0"
@@ -31,6 +32,12 @@
           "light": "./icons/filelight.png"
         },
         "configuration": "./language-configuration.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "skelly",
+        "path": "./snippets.json"
       }
     ],
     "grammars": [

@@ -28,7 +28,7 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.skelly",
-				"match": "\\b(int|long|short|byte|double|float|bool|char|void|shared|unmanaged|unsafe|super|override|gets|return|if|else|else if|do while|while|repeat if|break|continue|for|and|or|not|noteq|volatile|public|private|static|native|hidden|const|unsigned|signed|later|gag|true|false|struct|new)\\b"
+				"match": "\\b(int|long|short|byte|double|float|bool|char|void|shared|unmanaged|unsafe|super|override|gets|return|if|else|else if|do while|while|repeat if|break|continue|for|and|or|not|noteq|volatile|public|private|static|native|hidden|const|unsigned|signed|later|gag|true|false|struct|new|throwable|dealloc)\\b"
 			}]
 		},
 		"strings": {
