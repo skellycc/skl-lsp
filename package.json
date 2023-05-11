@@ -1,8 +1,13 @@
 {
-  "name": "skls",
+  "name": "skl-lsp",
   "displayName": "skelly",
   "description": "a skelly programming language support",
   "version": "0.0.1",
+  "publisher": "SkellyCompilerCollection",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/skellycompilercollection/skl-lsp.git"
+  },
   "engines": {
     "vscode": "^1.78.0"
   },
