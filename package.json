@@ -26,6 +26,10 @@
           ".skl",
           ".sklm"
         ],
+        "icon": {
+          "dark": "./icons/filedark.png",
+          "light": "./icons/filelight.png"
+        },
         "configuration": "./language-configuration.json"
       }
     ],
