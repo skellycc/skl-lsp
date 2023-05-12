@@ -12,6 +12,9 @@
 			"include": "#comments"
 		},
 		{
+			"include": "#class"
+		},
+		{
 			"include": "#preprocessor"
 		},
 		{
@@ -22,6 +25,12 @@
 		},
 		{
 			"include": "#function"
+		},
+		{
+			"include": "#variable"
+		},
+		{
+			"include": "#number"
 		}
 	],
 	"repository": {
@@ -52,6 +61,14 @@
 			"begin": "#",
 			"end": "\\n"
 		},
+		"variable": {
+			"name": "support.variable.skl",
+			"match": "[a-zA-z_]+[a-zA-z0-9]*"
+		},
+		"class": {
+			"name": "support.class.skl",
+			"match": "[a-zA-z_]+[a-zA-z0-9]  *{"
+		},
 		"method": {
 			"name": "entity.name.function.skl",
 			"match": "\\b(out)\\b"
@@ -63,6 +80,10 @@
 		"function": {
 			"name": "support.function.skl",
 			"match": "([a-zA-Z_{1}][a-zA-Z0-9_]+)(?=\\()"
+		},
+		"number": {
+			"name": "constant.numeric",
+			"match": "[1-9][0-9]*"
 		}
 	},
 	"scopeName": "source.skelly"
